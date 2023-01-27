@@ -1,0 +1,20 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int sumOfFirstNaturalNumbers(int num);
+
+
+int main() {
+    int num,sum=0,totalSum;
+    printf("Enter the value of num\n");
+    scanf("%d",&num);
+    totalSum=sumOfFirstNaturalNumbers(num);
+    printf("The sum of first n natural numbers is :%d",totalSum);
+    
+    
+}int sumOfFirstNaturalNumbers(int num){
+    int sum;
+    if(num==1){
+        return 1;
+    }else return sum=num+sumOfFirstNaturalNumbers(num-1);
+    
+}
