@@ -1,0 +1,21 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int Fib(int num); //FunctionPrototype
+
+int main() {
+    int num,FibNum;
+    printf("Enter the value of num\n");
+    scanf("%d",&num);
+    FibNum=Fib(num); //FunctionCall
+printf("The value of nth element of fibonnaci series is :%d\n",FibNum);
+    return 0;
+}int Fib(int num){
+    int FibNum;
+    if(num==0){
+        return 0;
+    }else if (num==1){
+        return 1;
+    }
+    else return FibNum=Fib(num-1)+Fib(num-2);
+    
+}
