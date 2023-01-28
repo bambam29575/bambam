@@ -1,0 +1,17 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int sumOfNaturalNumbers(int num);
+
+int main() {
+    int num;//we need a variable to define how many columns we are going to define .
+    printf("Enter your desired num\n");
+    scanf("%d",&num);
+    for (int i=1;i<=num;i++){//we have set the limit of number of columns we are going to represent in this program.
+    //Now once we define the limit , we need another loop so that we can print multiple stars in the same row.
+    // Here each next time we have to print the same no stars=columns.
+    for(int j=1;j<=i;j++){
+        printf("*");
+    }printf("\n");
+    }
+    
+}
