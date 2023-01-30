@@ -1,0 +1,38 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int array[10],i;
+    
+    for(i=0;i<10;i++){
+        printf("The value of element %d is : ",i+1);
+        scanf("%d",&array[i]);
+    }
+    int*ptr=&array[0];
+    printf("%d\n",ptr);
+    printf("%u\n",ptr);
+    printf("%d\n",*ptr);
+    ptr+=2;
+    
+    printf("%d",*ptr);
+    
+
+    return 0;
+}
+
+Output/-
+/tmp/4Osup2F5NG.o
+The value of element 1 is : 12
+The value of element 2 is : 23
+The value of element 3 is : 34
+The value of element 4 is : 45
+The value of element 5 is : 56
+The value of element 6 is : 67
+The value of element 7 is : 78
+The value of element 8 is : 89
+The value of element 9 is : 90
+The value of element 10 is : 100
+163776832
+163776832
+12
+34
