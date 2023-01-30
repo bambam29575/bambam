@@ -1,0 +1,11 @@
+Write a program to accept marks of five students in an array and print them to the screen.
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int marksOfFiveStudents[]={5,6,76,56,87};
+    printf("%d %d %d %d %d",marksOfFiveStudents[0], marksOfFiveStudents[1], marksOfFiveStudents[2], marksOfFiveStudents[3], marksOfFiveStudents[4] );
+
+    return 0;
+}
