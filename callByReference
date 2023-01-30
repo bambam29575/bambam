@@ -1,0 +1,20 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+void changeValue(int*a); //we dont need to use a here
+
+int main() {
+    int x,valueOfX;
+    printf("Enter the value of x\n");
+    scanf("%d",&x);
+    printf("The value of  x before changing :%d \n");
+    changeValue(&x);
+    printf("The value of x after changing :%d",x);
+    
+
+    return 0;
+}
+void changeValue(int *x){
+   *x*=10;
+    printf("The value of x after changing is : %d\n",*x);
+    
+}
