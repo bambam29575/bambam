@@ -1,0 +1,16 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char name [870];
+    printf("Enter your desired characters\n");
+    scanf("%s",&name);
+    int lengthOfString=strlen(name);
+    printf("%d",lengthOfString);
+
+    return 0;
+}
+Input/-
+PremShankar
+Output/-
+11
