@@ -1,0 +1,20 @@
+#include <stdio.h>
+struct employee{
+    int code;
+    float salary;
+    char name[78];
+
+};
+
+int main() {
+  struct employee e1;
+  e1.code=78345;
+  e1.salary=34754.845;
+  strcpy(e1.name,"Prem_Shankar");
+  printf("%s",e1.name);
+
+    return 0;
+}
+
+Output/-
+Prem_Shankar
