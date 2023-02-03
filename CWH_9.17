@@ -1,0 +1,24 @@
+# include <stdio.h>
+//Create a structure representing a bank account of a customer. What fields did you use and why?
+typedef struct customer{
+	int accountNo;
+	int age;
+	int depositAmount;
+	char name[20];
+}customer;
+
+int main(){
+	customer c1={78298,24,49594858,"Ratan"};
+	customer*ptr=&c1;
+	
+	printf("%d\n",ptr->accountNo);
+	printf("%d\n",c1.accountNo);
+	printf("%d",(*ptr).accountNo);
+
+return 0;
+}
+
+Output/-
+78298
+78298
+78298
