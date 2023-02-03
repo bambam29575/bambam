@@ -1,0 +1,19 @@
+# include <stdio.h>
+//Write a program to illustrate the use of an arrow operator -> in C.
+typedef struct employee{
+	int code;
+	float salary;
+	char name[20];
+}employee;
+
+int main(){
+	employee s1= {845,849,"Harrry"};
+employee*ptr=&s1;
+//s1={845,849,"Harrry"};
+
+printf("%s",ptr->name);
+return 0;
+}
+
+Output/-
+Harry
