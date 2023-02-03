@@ -1,0 +1,29 @@
+# include <stdio.h> //Write a program to count the occurrence of a given character in a string.
+
+int main(){
+	int i,count=0;
+
+char name[20], ctr[1];
+scanf("%s",&name);
+printf("Which character you want to count\n");
+scanf("%s",&ctr);
+
+for(i=0;i<20;i++){
+	if(name[i]==ctr[0]){
+		count++;
+	}else count==0;
+}
+printf("The occurence of the character %c is %d times ",ctr[0],count);
+
+return 0;
+}
+
+
+Output/-
+premShankar
+Which character you want to count
+a
+The occurence of the character a is 2 times
+--------------------------------
+Process exited after 19.39 seconds with return value 0
+Press any key to continue . . .
