@@ -1,0 +1,55 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+//Create an array of the multiplication table of 7 up to 10 (7x10=70). Use realloc to make it store 15 numbers(from 7x1 to 7x15).
+int main() {
+    int array[10],i,num;
+    printf("Enter the value of n\n");
+    scanf("%d",&num);
+    int*ptr=(int*)malloc(10*sizeof(int));
+    for(i=0;i<10;i++){
+        
+        *(ptr+i)=num*(i+1);
+       printf("Element %d is : %d \n",i+1,*(ptr+i));
+    }
+    ptr=(int*)realloc(ptr,15*sizeof(int));
+    for (i=10;i<15;i++){
+        *(ptr+i)=num*(i+1);
+        
+    }
+    printf("After using realloc() function\n");
+    for(i=0;i<15;i++){
+    printf("Element %d is %d\n",i+1,*(ptr+i));
+}
+    return 0;
+}
+
+Output/-
+/tmp/LwAdiABPvQ.o
+Enter the value of n
+7
+Element 1 is : 7 
+Element 2 is : 14 
+Element 3 is : 21 
+Element 4 is : 28 
+Element 5 is : 35 
+Element 6 is : 42 
+Element 7 is : 49 
+Element 8 is : 56 
+Element 9 is : 63 
+Element 10 is : 70 
+After using realloc() function
+Element 1 is 7
+Element 2 is 14
+Element 3 is 21
+Element 4 is 28
+Element 5 is 35
+Element 6 is 42
+Element 7 is 49
+Element 8 is 56
+Element 9 is 63
+Element 10 is 70
+Element 11 is 77
+Element 12 is 84
+Element 13 is 91
+Element 14 is 98
+Element 15 is 105
