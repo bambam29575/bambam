@@ -1,0 +1,17 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int change(int*n);
+
+int main() {
+    int num,value_after;
+    int*ptr=&num;
+    printf("Enter the value of num\n");
+    scanf("%d",&num);
+value_after=change(ptr);
+printf("%d",value_after);
+    return 0;
+}
+int change(int*k){
+    (*k)*=10;
+    return *k;
+}
