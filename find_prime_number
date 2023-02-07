@@ -6,7 +6,7 @@ printf("Enter the value of num\n");
 scanf("%d",&num);
 if (num==2||num==3){
 	count=0;
-}else if (num%2==0||num%3==0){
+}else if (num%2==0||num%3==0||num==1){
 	count=1;
 }else count=0;
 if (count==0){
