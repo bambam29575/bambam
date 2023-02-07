@@ -21,3 +21,56 @@ if (count==0){
 }
 return 0;
 }
+
+//Using_while_loop
+# include <stdio.h>
+
+int main(){
+int num, count,i=0;
+printf("Enter the value of num\n");
+scanf("%d",&num);
+
+while (i<1){
+if (num==2||num==3){
+	count=0;
+}else if (num%2==0||num%3==0||num==1){
+	count=1;
+}else count=0;	
+i++;
+	
+}
+
+if (count==0){
+	printf("%d is a prime number",num);
+}else {
+	printf("%d is a not prime number",num);
+}
+return 0;
+}
+
+//Using do_while_loop
+# include <stdio.h>
+
+int main(){
+int num, count,i=0;
+printf("Enter the value of num\n");
+scanf("%d",&num);
+
+do{
+if (num==2||num==3){
+	count=0;
+}else if (num%2==0||num%3==0||num==1){
+	count=1;
+}else count=0;	
+i++;	
+}while(i<1);
+
+if (count==0){
+	printf("%d is a prime number",num);
+}else {
+	printf("%d is a not prime number",num);
+}
+return 0;
+}
+
+
