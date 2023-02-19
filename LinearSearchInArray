@@ -1,0 +1,47 @@
+# include <stdio.h>
+
+int main(){
+int array[10],i,num,flag,no;
+printf("Enter the values of num\n");
+scanf("%d",&num);
+
+
+for(i=0;i<num;i++){
+	printf("Enter the value of element%d\n",i+1);
+	scanf("%d",&array[i]);
+	}
+printf("Enter the value of no\n");
+scanf("%d",&no);
+
+for(i=0;i<num;i++){
+	if(no==array[i]){
+		flag=1;
+		break;
+	}else flag=0;
+}
+if(flag==1){
+	printf("Search is successful array[%d]",i);
+}
+else {
+	printf("Search is unsuccessful");
+}
+return 0;
+}
+
+Output/-
+/tmp/Wl7SGhtLv1.o
+Enter the values of num
+5
+Enter the value of element1
+12
+Enter the value of element2
+34
+Enter the value of element3
+54
+Enter the value of element4
+23
+Enter the value of element5
+456
+Enter the value of no
+54
+Search is successful array[2]
