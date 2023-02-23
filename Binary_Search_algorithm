@@ -1,0 +1,24 @@
+#include <stdio.h>
+int binary_search(int array[], int size, int element ){
+    int low, high=size-1,i,mid=(low+high)/2;
+    for (i=0;i<size-1;i++){
+        mid=(low+high)/2;
+            if (array[mid]==element){
+                return mid;
+            }else if (array[mid]<element){
+                low=mid-1;
+            }else high=mid-1;
+    }
+}
+int main() {
+   int array[]={1,2,3,4,5,6} , size , element =1, index;
+   size=sizeof(array)/sizeof(int);
+   index=binary_search(array,size,element);
+   printf(" The element %d found at Index %d",element,index);
+
+    return 0;
+}
+
+output/-
+/tmp/ZHewomE5lH.o
+The element 1 found at Index 0
