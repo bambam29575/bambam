@@ -1,6 +1,6 @@
 #include <stdio.h>
 int binary_search(int array[], int size, int element ){
-    int low=0, high=size-1,i,mid=(low+high)/2;
+    int low=0, high=size-1,i,mid;
     for (i=0;i<size-1;i++){
         mid=(low+high)/2;
             if (array[mid]==element){
