@@ -11,7 +11,7 @@ int main() {
       
     for(int j = row; j > row-i; j--){
     
-    cout << "*";
+    cout << "*"; //If you want to add r1->1 || r2->22 || r3->333 then replace * with i
     
       
     }
