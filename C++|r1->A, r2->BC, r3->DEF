@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int num;
+  cin >> num;
+  char ch;
+  ch = 'A';
+  
+  for(int r = 1; r <= num; r++){
+      
+      for(int c = r; c >= 1; c-- ){
+          cout << ch;
+          ch++;
+        
+      }
+      
+      
+      cout << endl;
+    
+    
+    return 0; 
+     
+  }
