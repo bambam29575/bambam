@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cin >> num;
+    for (int r = 1; r <= num; r++){
+        for(int c = 1; c <= r; c++){
+            char ch = 'A' + r + c - 2;
+            cout << ch;
+        }
+        cout << endl;
+    }
+    
+
+    return 0;
+}
