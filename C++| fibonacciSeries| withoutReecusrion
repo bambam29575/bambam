@@ -10,7 +10,7 @@ int main() {
         cout << "At "<< i + 2 << " "<<nextNum << endl;
         a = b;
         b = nextNum; // priority -> Number which we need to find , to find that number we need to add previous two numbers
-                     // -> Thats why we are changing the value of a with b and b with nextNum before re entering the loop.
+                     // -> Thats why we are UPDATING the value of a with b and b with nextNum before re entering the loop.
         
     }
     
