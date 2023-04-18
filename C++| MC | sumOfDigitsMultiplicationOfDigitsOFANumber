@@ -1,0 +1,33 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, k, p, i, sum = 0, mul = 1;
+    cin >> n;
+    for (i = 1; i > 0; i++){
+        
+        k = n % 10;
+        p = n / 10;
+        sum += k;
+        mul *= k;
+        if (p == 0){
+            break;
+        }
+        n = p;
+    }
+    cout << "sum = " << sum << endl<< "mul = " << mul;
+    
+    
+
+    return 0;
+}
+
+output / -
+234
+sum = 9
+mul = 24
+
+/* In order to digits of a number seperately , we need to divide the n % 10 which will give 4 -- now we need 23 only so we 
+can divide 23 % 10 and get 3, to get this we will divide 234 / 10 = 23. = 23 -- we will keep doing this until we get quotient 
+0 and then come out of the loop*/
