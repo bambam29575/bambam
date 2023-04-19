@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, row, space, i, num = 1;
+    cin >> n;
+    for(row = 1; row <= n; row++){
+        for(space = 1; space <= n - row; space++){
+            cout << " ";
+        }for(i = 1; i <= row; i++){
+            cout << num;
+        }num++;
+        cout << endl;
+    }
+    
+
+    return 0;
+}
+
+output/-
+6
+     1
+    22
+   333
+  4444
+ 55555
+666666
