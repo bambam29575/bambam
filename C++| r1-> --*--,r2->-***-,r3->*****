@@ -9,8 +9,6 @@ int main() {
             cout << " ";
         }for(star = 1; star <= 2*row - 1; star++){
             cout << "*";
-        }for(space = 1; space <= n - row; space++){
-            cout << " ";
         }
         cout << endl;
     }
