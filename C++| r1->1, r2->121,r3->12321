@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, row, space, num;
+    cin >> n;
+    
+    for(row = 1; row <= n; row++){
+        for(space = 1; space <= n - row; space++){
+            cout << " " << " ";
+        }for(num = 1; num <= row; num++){
+            cout << num << " ";
+        }for(num = row - 1; num >= 1; num--){
+            cout << num << " ";
+        }for(space = 1; space <= n - row; space++){
+            cout << " " << " ";
+        }cout << endl;
+    }
+    
+    
+
+    return 0;
+}
+
+output/-
+5
+        1         
+      1 2 1       
+    1 2 3 2 1     
+  1 2 3 4 3 2 1   
+1 2 3 4 5 4 3 2 1 
