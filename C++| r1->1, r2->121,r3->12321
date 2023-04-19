@@ -12,8 +12,6 @@ int main() {
             cout << num << " ";
         }for(num = row - 1; num >= 1; num--){
             cout << num << " ";
-        }for(space = 1; space <= n - row; space++){
-            cout << " " << " ";
         }cout << endl;
     }
     
