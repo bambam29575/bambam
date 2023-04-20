@@ -1,0 +1,32 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    for(int row = 1; row <= n; row++){
+        for(int num1 = 1; num1 <= n - row + 1; num1++){
+            cout << num1;
+        }
+        for(int star = 1; star <= 2*row - 2; star++){
+            cout<< "*";
+        }for(int num2 = n - row + 1; num2 >= 1; num2--){
+            cout << num2;
+        }cout << endl;
+    }
+
+    return 0;
+}
+
+output/-
+9
+123456789987654321
+12345678**87654321
+1234567****7654321
+123456******654321
+12345********54321
+1234**********4321
+123************321
+12**************21
+1****************1
