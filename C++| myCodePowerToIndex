@@ -1,0 +1,18 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+ int base, index, value = 1;
+ cin >> base >> index;
+ for (int i = 1; i <= index; i++){
+     value *= base;
+ }
+ cout <<"base "<< base<<" to the power "<<index<<" = " <<value;
+    return 0;
+}
+
+ouput/-
+2
+3
+base 2 to the power 3 = 8
