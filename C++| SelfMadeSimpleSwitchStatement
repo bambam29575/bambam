@@ -1,0 +1,40 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cin >> num;
+    int k = 9;
+    switch (num){
+        case 1 : cout << "Hello1" << endl;
+        break;
+        case 2 : cout << "Hello2" << endl;
+        break;
+        case 3 : cout << "Hello3" << endl;
+        break;
+        case 4 : 
+        break;
+        case 5 : cout << "Hello5" << endl;
+        break;
+        default : switch(k){
+            case 1 : cout << "dafault1";
+            break;
+            case 2 : cout << "default2";
+            break;
+            default : if(k == 8)
+                cout << "8";
+            else 
+                cout << "15";
+            
+        } 
+    }
+       
+    
+
+    return 0;
+}
+
+output/-
+7
+15
